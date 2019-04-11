@@ -405,7 +405,7 @@ function FolderRound {
 FolderRound -Toggle $TsFolderRound -Ext "ts" -Path "$env:FolderPath" -Round $ts_folder_max
 #mp4
 FolderRound -Toggle $Mp4FolderRound -Ext "mp4" -Path "$mp4_folder_path" -Round $mp4_folder_max
-#番組情報ファイルで削除
+#番組情報ファイルを削除
 Remove-Item -LiteralPath "${env:FilePath}.program.txt" -ErrorAction SilentlyContinue
 
 #====================jpg出力====================
