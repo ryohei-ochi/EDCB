@@ -1,136 +1,152 @@
 #181212
 #_EDCBX_HIDE_
-#ѓtѓ@ѓCѓ‹–ј‚рѓ^ѓCѓgѓ‹ѓoЃ[‚Й•\Ћ¦
+#гѓ•г‚Ўг‚¤гѓ«еђЌг‚’г‚їг‚¤гѓ€гѓ«гѓђгѓјгЃ«иЎЁз¤є
 #(Get-Host).UI.RawUI.WindowTitle="$($MyInvocation.MyCommand.Name):${env:FileName}.ts"
 
-#####################ѓ†Ѓ[ѓUђЭ’и####################################################################################################
+#####################гѓ¦гѓјг‚¶иЁ­е®љ####################################################################################################
 
 <#
-ђЭ’и‚МЏ‘‚«•ыѓ‹Ѓ[ѓ‹(PowerShell‚МЋd—l)
-X ‚ѕ‚Я
-$Toggle= ѓCѓRЃ[ѓ‹Ћc‚µ‚Ѕ‚Ь‚Ь‚Й‚µ‚И‚ўЃIѓeѓXѓg‚ЕX‚Й‚і‚к‚й‚жЃI
-O ‚Ёk
-$Toggle=$False –іЊш
-$Toggle=$false ‘е•¶ЋљЏ¬•¶Ћљ‚М‹ж•К‚Н‚И‚ў
-$Toggle=0 –іЊш
-$Toggle=$True —LЊш
-$Toggle=1 —LЊш
-$Toggle = $true =‚в+=‚М‘OЊг‚ЙѓXѓyЃ[ѓX‚Є‚ ‚Б‚Д‚а—З‚ў(ѓRЃ[ѓfѓBѓ“ѓO“I‚Й‚Н‚±‚Б‚ї‚Єђ„Џ§‚Б‚Ы‚ў)
-$Toggle ‹у—“
+иЁ­е®љгЃ®ж›ёгЃЌж–№гѓ«гѓјгѓ«(PowerShellгЃ®д»•ж§)
+X гЃ г‚Ѓ
+$Toggle= г‚¤г‚ігѓјгѓ«ж®‹гЃ—гЃџгЃѕгЃѕгЃ«гЃ—гЃЄгЃ„пјЃгѓ†г‚№гѓ€гЃ§XгЃ«гЃ•г‚Њг‚‹г‚€пјЃ
+O гЃЉk
+$Toggle=$False з„ЎеЉ№
+$Toggle=$false е¤§ж–‡е­—е°Џж–‡е­—гЃ®еЊєе€ҐгЃЇгЃЄгЃ„
+$Toggle=0 з„ЎеЉ№
+$Toggle=$True жњ‰еЉ№
+$Toggle=1 жњ‰еЉ№
+$Toggle = $true =г‚„+=гЃ®е‰ЌеѕЊгЃ«г‚№гѓљгѓјг‚№гЃЊгЃ‚гЃЈгЃ¦г‚‚и‰ЇгЃ„(г‚ігѓјгѓ‡г‚Јгѓіг‚°зљ„гЃ«гЃЇгЃ“гЃЈгЃЎгЃЊжЋЁеҐЁгЃЈгЃЅгЃ„)
+$Toggle з©єж¬„
 $Toggle=$Null null
-#$Toggle ѓRѓЃѓ“ѓg
-X ‚ѕ‚Я
-$Path=C:\DTV\EncLog ѓGѓ‰Ѓ[Џo‚й
-$Path="C:\DTV\ѓGѓ“ѓRЃ[ѓhЃ@ѓЌѓO" Џ€—ќ‚Е‚«‚й‚©‚а‚µ‚к‚И‚ў‚Ї‚ЗЉо–{“I‚ЙѓpѓX‚Й”јЉp‚в‘SЉp‚МѓXѓyЃ[ѓX‚Н”сђ„Џ§
-O ‚Ёk
-$Path='C:\DTV\EncLog' •Пђ”‚Є–і‚Ї‚к‚ОѓЉѓeѓ‰ѓ‹‚Е‚Ёk
-$Path = "C:\DTV\EncLog" ‚а‚ї‚М‚л‚с
-X ‚ѕ‚Я
-$Arg='-quality $ArgQual' ѓVѓ“ѓOѓ‹ѓNѓHЃ[ѓg‚Е‚Н'$ArgQual'‚Ж‚ў‚¤•¶Ћљ—с‚Й‚И‚Б‚Д‚µ‚Ь‚¤‚М‚Е•Пђ”‚М’†ђg‚Є“WЉJ‚і‚к‚И‚ў‚жЃI
-$Arg="-vf bwdif=0:-1:1$ArgScale" •Пђ”–ј‚ЖѓRЃ[ѓh‚Є•ґ‚з‚н‚µ‚ў‚жЃI
-$Arg="-i "${FilePath}"" ѓ_ѓuѓ‹ѓNѓIЃ[ѓg‚М”Н€Н‚Є–Е’ѓ–Е’ѓ‚ѕ‚ж><
-$Arg='-i "${FilePath}"' •Пђ”‚Є“WЉJ‚і‚к‚И‚ў‚жЃI
-O ‚Ёk
-$Arg="-quality $ArgQual" ѓ_ѓuѓ‹ѓNѓHЃ[ѓg‚Е‚Н•Пђ”‚М’†ђg‚Є“WЉJ‚і‚к‚й
-$Arg="-vf bwdif=0:-1:1${ArgScale}" ${}‚рЋg‚Ё‚¤
-$Arg="-i `"${FilePath}`"" ѓoѓbѓNѓNѓIЃ[ѓg`‚ЕѓGѓXѓPЃ[ѓv‚µ‚ж‚¤
-X ‚ѕ‚Я
-$logcnt_max="1000" ‚±‚¤‚ў‚¤‚М‚НString(•¶Ћљ—с)‚¶‚б‚И‚ў‚жЃIint(ђ”’l)‚ѕ‚жЃI
-O ‚Ёk
+#$Toggle г‚ігѓЎгѓігѓ€
+X гЃ г‚Ѓ
+$Path=C:\DTV\EncLog г‚Ёгѓ©гѓје‡єг‚‹
+$Path="C:\DTV\г‚Ёгѓіг‚ігѓјгѓ‰гЂЂгѓ­г‚°" е‡¦зђ†гЃ§гЃЌг‚‹гЃ‹г‚‚гЃ—г‚ЊгЃЄгЃ„гЃ‘гЃ©еџєжњ¬зљ„гЃ«гѓ‘г‚№гЃ«еЌЉи§’г‚„е…Ёи§’гЃ®г‚№гѓљгѓјг‚№гЃЇйќћжЋЁеҐЁ
+O гЃЉk
+$Path='C:\DTV\EncLog' е¤‰ж•°гЃЊз„ЎгЃ‘г‚ЊгЃ°гѓЄгѓ†гѓ©гѓ«гЃ§гЃЉk
+$Path = "C:\DTV\EncLog" г‚‚гЃЎгЃ®г‚Ќг‚“
+X гЃ г‚Ѓ
+$Arg='-quality $ArgQual' г‚·гѓіг‚°гѓ«г‚Їг‚©гѓјгѓ€гЃ§гЃЇ'$ArgQual'гЃЁгЃ„гЃ†ж–‡е­—е€—гЃ«гЃЄгЃЈгЃ¦гЃ—гЃѕгЃ†гЃ®гЃ§е¤‰ж•°гЃ®дё­иє«гЃЊе±•й–‹гЃ•г‚ЊгЃЄгЃ„г‚€пјЃ
+$Arg="-vf bwdif=0:-1:1$ArgScale" е¤‰ж•°еђЌгЃЁг‚ігѓјгѓ‰гЃЊзґ›г‚‰г‚ЏгЃ—гЃ„г‚€пјЃ
+$Arg="-i "${FilePath}"" гѓЂгѓ–гѓ«г‚Їг‚Єгѓјгѓ€гЃ®зЇ„е›ІгЃЊж»…иЊ¶ж»…иЊ¶гЃ г‚€><
+$Arg='-i "${FilePath}"' е¤‰ж•°гЃЊе±•й–‹гЃ•г‚ЊгЃЄгЃ„г‚€пјЃ
+O гЃЉk
+$Arg="-quality $ArgQual" гѓЂгѓ–гѓ«г‚Їг‚©гѓјгѓ€гЃ§гЃЇе¤‰ж•°гЃ®дё­иє«гЃЊе±•й–‹гЃ•г‚Њг‚‹
+$Arg="-vf bwdif=0:-1:1${ArgScale}" ${}г‚’дЅїгЃЉгЃ†
+$Arg="-i `"${FilePath}`"" гѓђгѓѓг‚Їг‚Їг‚Єгѓјгѓ€`гЃ§г‚Ёг‚№г‚±гѓјгѓ—гЃ—г‚€гЃ†
+X гЃ г‚Ѓ
+$logcnt_max="1000" гЃ“гЃ†гЃ„гЃ†гЃ®гЃЇString(ж–‡е­—е€—)гЃг‚ѓгЃЄгЃ„г‚€пјЃint(ж•°еЂ¤)гЃ г‚€пјЃ
+O гЃЉk
 $logcnt_max=1000
 $logcnt_max=[int]"1000"
 $Size=200GB
-$Size="200GB" OK‚з‚µ‚ў(^^;;
+$Size="200GB" OKг‚‰гЃ—гЃ„(^^;;
 $Size=0.2TB
 #>
 
-#ffmpeg.exeЃAffprobe.exe‚Є‚ ‚йѓfѓBѓЊѓNѓgѓЉ
+#гѓ«гѓјгѓ—гЃ«е€©з”ЁгЃ™г‚‹гѓ•гѓ©г‚°
+$EncodeFlag = $TRUE
+
+#ж·±е¤њй›»еЉ›г‚’жњ‰еЉ№гЃ«е€©з”ЁгЃ™г‚‹гЃџг‚ЃгЂЃ3ж™‚д»ҐдёЉгЂЃ8ж™‚жњЄжєЂгЃ®ж™‚й–“гЃ«г‚Ёгѓіг‚ігѓјгѓ‰г‚’е®џиЎЊгЃ™г‚‹
+while( $EncodeFlag ){
+    #зЏѕењЁгЃ®ж™‚й–“г‚’еЏ–еѕ—гЃ™г‚‹
+    $EncodeHour = ( Get-Date ).Hour
+
+    if( ( $EncodeHour -ge 3 ) -And ( $EncodeHour -lt 8) ){
+        $EncodeFlag = $FALSE
+    }else{
+        #300з§’еѕ…гЃ¤
+        Start-Sleep -s 300
+    }
+}
+
+#ffmpeg.exeгЂЃffprobe.exeгЃЊгЃ‚г‚‹гѓ‡г‚Јгѓ¬г‚Їгѓ€гѓЄ
 $ffpath='C:\ffmpeg\bin'
 
-#--------------------ѓЌѓO--------------------
-#$False=–іЊшЃA$True=—LЊш
+#--------------------гѓ­г‚°--------------------
+#$False=з„ЎеЉ№гЂЃ$True=жњ‰еЉ№
 $log_toggle=$True
-#ѓЌѓOЏo—НѓfѓBѓЊѓNѓgѓЉ
+#гѓ­г‚°е‡єеЉ›гѓ‡г‚Јгѓ¬г‚Їгѓ€гѓЄ
 $log_path='D:\Rec\EncLog'
-#ѓЌѓO‚рЋc‚·ђ”
+#гѓ­г‚°г‚’ж®‹гЃ™ж•°
 $logcnt_max=1000
 
-#--------------------ts‚МЋ©“®ЌнЏњ--------------------
-#и‡’l‚р’ґ‰Я‚µ‚ЅЏкЌ‡ЃA$False=—e—КЊxЌђЃA$True=ts‚рЋ©“®ЌнЏњ
+#--------------------tsгЃ®и‡Єе‹•е‰Љй™¤--------------------
+#й–ѕеЂ¤г‚’и¶…йЃЋгЃ—гЃџе ґеђ€гЂЃ$False=е®№й‡Џи­¦е‘ЉгЂЃ$True=tsг‚’и‡Єе‹•е‰Љй™¤
 $TsFolderRound=$False
-#^‰жѓtѓHѓ‹ѓ_‚МЏгЊА
+#йЊІз”»гѓ•г‚©гѓ«гѓЂгЃ®дёЉй™ђ
 $ts_folder_max=150GB
 
-#--------------------mp4‚МЋ©“®ЌнЏњ--------------------
-#и‡’l‚р’ґ‰Я‚µ‚ЅЏкЌ‡ЃA$False=—e—КЊxЌђЃA$True=mp4‚рЋ©“®ЌнЏњ
+#--------------------mp4гЃ®и‡Єе‹•е‰Љй™¤--------------------
+#й–ѕеЂ¤г‚’и¶…йЃЋгЃ—гЃџе ґеђ€гЂЃ$False=е®№й‡Џи­¦е‘ЉгЂЃ$True=mp4г‚’и‡Єе‹•е‰Љй™¤
 $Mp4FolderRound=$True
-#mp4—pѓtѓHѓ‹ѓ_‚МЏгЊА
+#mp4з”Ёгѓ•г‚©гѓ«гѓЂгЃ®дёЉй™ђ
 $mp4_folder_max=25GB
 
-#--------------------jpgЏo—Н--------------------
-#$True=—LЊш $False=–іЊш
+#--------------------jpgе‡єеЉ›--------------------
+#$True=жњ‰еЉ№ $False=з„ЎеЉ№
 $jpg_toggle=$False
-#A”Фjpg‚рЏo—Н‚·‚йѓtѓHѓ‹ѓ_—p‚МѓfѓBѓЊѓNѓgѓЉ
+#йЂЈз•Єjpgг‚’е‡єеЉ›гЃ™г‚‹гѓ•г‚©гѓ«гѓЂз”ЁгЃ®гѓ‡г‚Јгѓ¬г‚Їгѓ€гѓЄ
 $jpg_path='C:\Users\sbn\Desktop\TVTest'
-#jpgЏo—Н‚µ‚Ѕ‚ўЋ©“®—\–сѓLЃ[ѓЏЃ[ѓh(Џн‚ЙjpgЏo—Н‚·‚йЏкЌ‡: $jpg_addkey='')
-$jpg_addkey='ѓCѓ“ѓ^Ѓ[ѓ~ѓbѓVѓ‡ѓ“|‚в‚Є‚ДЊN‚Й‚И‚й|‰F’€ђнЉНѓ„ѓ}ѓg|ѓAѓЉѓVѓ[Ѓ[ѓVѓ‡ѓ“|beatless'
-#Ћ©“®—\–сѓLЃ[ѓЏЃ[ѓh‚Й€ш‚БЉ|‚©‚Б‚ЅЏкЌ‡‚ЙЋАЌs‚·‚йѓRЃ[ѓh Ћg—p‰В”\:$ArgScale(‰Ў‚Є1440px‚МЏкЌ‡‚М‚Э",scale=1920:1080"‚ЄЉi”[‚і‚к‚йЃB‰ж‘њ‚Й‚НSAR‚Ж‚©–і‚ў‚М‚Е)
+#jpgе‡єеЉ›гЃ—гЃџгЃ„и‡Єе‹•дє€зґ„г‚­гѓјгѓЇгѓјгѓ‰(еёёгЃ«jpgе‡єеЉ›гЃ™г‚‹е ґеђ€: $jpg_addkey='')
+$jpg_addkey='г‚¤гѓіг‚їгѓјгѓџгѓѓг‚·гѓ§гѓі|г‚„гЃЊгЃ¦еђ›гЃ«гЃЄг‚‹|е®‡е®™ж€¦и‰¦гѓ¤гѓћгѓ€|г‚ўгѓЄг‚·г‚јгѓјг‚·гѓ§гѓі|beatless'
+#и‡Єе‹•дє€зґ„г‚­гѓјгѓЇгѓјгѓ‰гЃ«еј•гЃЈжЋ›гЃ‹гЃЈгЃџе ґеђ€гЃ«е®џиЎЊгЃ™г‚‹г‚ігѓјгѓ‰ дЅїз”ЁеЏЇиѓЅ:$ArgScale(жЁЄгЃЊ1440pxгЃ®е ґеђ€гЃ®гЃї",scale=1920:1080"гЃЊж јзґЌгЃ•г‚Њг‚‹гЂ‚з”»еѓЏгЃ«гЃЇSARгЃЁгЃ‹з„ЎгЃ„гЃ®гЃ§)
 function ImageEncode {
-    #A”ФjpgЏo—Н‚·‚й—б
+    #йЂЈз•Єjpgе‡єеЉ›гЃ™г‚‹дѕ‹
     <#
-    #Џo—НѓfѓBѓЊѓNѓgѓЉ
+    #е‡єеЉ›гѓ‡г‚Јгѓ¬г‚Їгѓ€гѓЄ
     New-Item "${jpg_path}\${env:FileName}" -ItemType Directory
-    #ѓvѓЌѓZѓXЋАЌs
+    #гѓ—гѓ­г‚»г‚№е®џиЎЊ
     Invoke-Process -File "${ffpath}\ffmpeg.exe" -Arg "-y -hide_banner -nostats -an -skip_frame nokey -i `"${env:FilePath}`" -vf bwdif=0:-1:1,pp=ac,hqdn3d=2.0${ArgScale} -f image2 -q:v 0 -vsync 0 `"$jpg_path\$env:FileName\%05d.jpg`""
     #>
 
-    #waifu2x‚р‚±‚±‚ЕЋg—p‚·‚й‚±‚Ж‚Н€к‰ћ‰В”\‚Е‚·‚ЄЃAЏ€—ќЋћЉФ‚Є”сЊ»ЋА“I‚Е‚·
+    #waifu2xг‚’гЃ“гЃ“гЃ§дЅїз”ЁгЃ™г‚‹гЃ“гЃЁгЃЇдёЂеїњеЏЇиѓЅгЃ§гЃ™гЃЊгЂЃе‡¦зђ†ж™‚й–“гЃЊйќћзЏѕе®џзљ„гЃ§гЃ™
 
-    #ts‚р•ЫЋќ—pѓfѓBѓЊѓNѓgѓЉ‚ЙѓRѓsЃ[‚·‚й—б
+    #tsг‚’дїќжЊЃз”Ёгѓ‡г‚Јгѓ¬г‚Їгѓ€гѓЄгЃ«г‚ігѓ”гѓјгЃ™г‚‹дѕ‹
     Copy-Item -LiteralPath "${env:FilePath}" "D:\tsfiles" -ErrorAction SilentlyContinue
 }
 
-#--------------------tsѓtѓ@ѓCѓ‹ѓTѓCѓY”»•К--------------------
-#‰f‘њ‚М•iЋї€шђ”‚рtsѓtѓ@ѓCѓ‹ѓTѓCѓY‚Й‚ж‚Б‚Д“K‰ћ“I‚Й•П‚¦‚й($ArgQual)
-#“K‰ћ•iЋї‹@”\ $False=–іЊш(ѓGѓ“ѓRЃ[ѓh€шђ”“а‚Й‹LЏq)ЃA$True=’КЏнЃE’б•iЋї‚ри‡’l‚ЕђШ‚и‘Ц‚¦
+#--------------------tsгѓ•г‚Ўг‚¤гѓ«г‚µг‚¤г‚єе€¤е€Ґ--------------------
+#ж еѓЏгЃ®е“ЃиіЄеј•ж•°г‚’tsгѓ•г‚Ўг‚¤гѓ«г‚µг‚¤г‚єгЃ«г‚€гЃЈгЃ¦йЃ©еїњзљ„гЃ«е¤‰гЃ€г‚‹($ArgQual)
+#йЃ©еїње“ЃиіЄж©џиѓЅ $False=з„ЎеЉ№(г‚Ёгѓіг‚ігѓјгѓ‰еј•ж•°е†…гЃ«иЁиї°)гЂЃ$True=йЂљеёёгѓ»дЅЋе“ЃиіЄг‚’й–ѕеЂ¤гЃ§е€‡г‚Љж›їгЃ€
 $tssize_toggle=$Fals
-#и‡’l
-$tssize_max=20GB #‚­‚з‚ў‚Є‚Ё‚·‚·‚Я
-#’КЏн•iЋї(LA-ICQ:27,x265:25)
+#й–ѕеЂ¤
+$tssize_max=20GB #гЃЏг‚‰гЃ„гЃЊгЃЉгЃ™гЃ™г‚Ѓ
+#йЂљеёёе“ЃиіЄ(LA-ICQ:27,x265:25)
 $quality_normal='-init_qpI 23 -init_qpP 27 -init_qpB 27'
-#’б•iЋї(LA-ICQ:30,x265:27)
+#дЅЋе“ЃиіЄ(LA-ICQ:30,x265:27)
 $quality_low='-init_qpI 25 -init_qpP 30 -init_qpB 32'
 
-#--------------------ѓfѓ…ѓAѓ‹ѓ‚ѓm‚М”»•К--------------------
-#‰№ђє€шђ”‚рѓfѓ…ѓAѓ‹ѓ‚ѓm‚©”Ы‚©‚Е•П‚¦‚й($ArgAudio)
-#ѓfѓ…ѓAѓ‹ѓ‚ѓm
+#--------------------гѓ‡гѓҐг‚ўгѓ«гѓўгѓЋгЃ®е€¤е€Ґ--------------------
+#йџіеЈ°еј•ж•°г‚’гѓ‡гѓҐг‚ўгѓ«гѓўгѓЋгЃ‹еђ¦гЃ‹гЃ§е¤‰гЃ€г‚‹($ArgAudio)
+#гѓ‡гѓҐг‚ўгѓ«гѓўгѓЋ
 $audio_dualmono='-c:a aac -b:a 128k -ac 1 -filter_complex channelsplit'
-#’КЏн
-$audio_normal='-c:a copy' #ѓGѓ‰Ѓ[‚НЏo‚й‚ЄЋё”s‚µ‚И‚ў
-#$audio_normal='-c:a aac -b:a 256k' ЌДѓGѓ“ѓR
-#$audio_normal='-c:a copy -bsf:a aac_adtstoasc' Ћё”s‚·‚йЏгExitCode=0‚М€ЧЃA”сђ„Џ§
+#йЂљеёё
+$audio_normal='-c:a copy' #г‚Ёгѓ©гѓјгЃЇе‡єг‚‹гЃЊе¤±ж•—гЃ—гЃЄгЃ„
+#$audio_normal='-c:a aac -b:a 256k' е†Ќг‚Ёгѓіг‚і
+#$audio_normal='-c:a copy -bsf:a aac_adtstoasc' е¤±ж•—гЃ™г‚‹дёЉExitCode=0гЃ®з‚єгЂЃйќћжЋЁеҐЁ
 
-#--------------------PID‚М”»•К--------------------
-#•K—v‚ИPID‚рЋж“ѕ‚µ-map€шђ”‚Й‰Б‚¦‚й($ArgPid)
+#--------------------PIDгЃ®е€¤е€Ґ--------------------
+#еї…и¦ЃгЃЄPIDг‚’еЏ–еѕ—гЃ—-mapеј•ж•°гЃ«еЉ гЃ€г‚‹($ArgPid)
 
-#--------------------ѓGѓ“ѓRЃ[ѓh--------------------
-#mp4‚М€кЋћЏo—НѓfѓBѓЊѓNѓgѓЉ
+#--------------------г‚Ёгѓіг‚ігѓјгѓ‰--------------------
+#mp4гЃ®дёЂж™‚е‡єеЉ›гѓ‡г‚Јгѓ¬г‚Їгѓ€гѓЄ
 $tmp_folder_path='D:\Rec\tmp'
-#mp4•Ы‘¶(Backup and SyncЃAѓЌЃ[ѓJѓ‹•Ы‘¶)—pѓfѓBѓЊѓNѓgѓЉ
+#mp4дїќе­(Backup and SyncгЂЃгѓ­гѓјг‚«гѓ«дїќе­)з”Ёгѓ‡г‚Јгѓ¬г‚Їгѓ€гѓЄ
 $mp4_folder_path='D:\Rec\mp4'
-#—бЉOѓfѓBѓЊѓNѓgѓЉ(ѓ‹Ѓ[ѓv‚µ‚Д‚аffmpeg‚МЏ€—ќ‚ЙЋё”sЃAmp4‚Є10GB‚ж‚и‘е‚«‚ўЏкЌ‡ etcЃc‚ЙtsЃAts.program.txtЃAts.errЃAmp4‚р‘Ю”р)
+#дѕ‹е¤–гѓ‡г‚Јгѓ¬г‚Їгѓ€гѓЄ(гѓ«гѓјгѓ—гЃ—гЃ¦г‚‚ffmpegгЃ®е‡¦зђ†гЃ«е¤±ж•—гЂЃmp4гЃЊ10GBг‚€г‚Ље¤§гЃЌгЃ„е ґеђ€ etcвЂ¦гЃ«tsгЂЃts.program.txtгЂЃts.errгЂЃmp4г‚’йЂЂйЃї)
 $err_folder_path='D:\Rec\Err'
-#mp4‚М10GBѓtѓ@ѓCѓ‹ѓTѓCѓYЏгЊА $True=—LЊш $False=–іЊш
+#mp4гЃ®10GBгѓ•г‚Ўг‚¤гѓ«г‚µг‚¤г‚єдёЉй™ђ $True=жњ‰еЉ№ $False=з„ЎеЉ№
 $googledrive=$True
-#mp4—pffmpeg€шђ” 
+#mp4з”Ёffmpegеј•ж•° 
 <#
--File: ЋАЌsѓtѓ@ѓCѓ‹‚МѓpѓX
--Arg: €шђ”
-    $ArgAudio(ѓGѓ“ѓRЋё”s‚µ‚И‚ў€Ч‚Й•Kђ{)
-    $ArgQual(ѓGѓ“ѓRЃ[ѓh€шђ”“а‚Й‹LЏq‚µ•iЋї‚вѓrѓbѓgѓЊЃ[ѓg‚рЊЕ’и‚·‚йЏкЌ‡•s—v)
-    $ArgPid(ѓGѓ“ѓRЋё”s‚µ‚И‚ў€Ч‚Й•Kђ{)
--Priority: ѓvѓЌѓZѓX—Dђж“x MSDN‚МProcess.PriorityClassЋQЏЖ (Normal,Idle,High,RealTime,BelowNormal,AboveNormal) Ѓ¦•Kђ{‚Е‚Н‚И‚ў
--Affinity: Ћg—p‚·‚й_—ќѓRѓA‚МЋw’и MSDN‚МProcess.ProcessorAffinityЋQЏЖ ѓRѓA5(10000)Ѓ`12(100000000000)‚рЋg—p=0000111111110000(2ђi)=4080(10ђi)=0xFF0(16ђi) Ѓ¦•Kђ{‚Е‚Н‚И‚ў
+-File: е®џиЎЊгѓ•г‚Ўг‚¤гѓ«гЃ®гѓ‘г‚№
+-Arg: еј•ж•°
+    $ArgAudio(г‚Ёгѓіг‚іе¤±ж•—гЃ—гЃЄгЃ„з‚єгЃ«еї…й €)
+    $ArgQual(г‚Ёгѓіг‚ігѓјгѓ‰еј•ж•°е†…гЃ«иЁиї°гЃ—е“ЃиіЄг‚„гѓ“гѓѓгѓ€гѓ¬гѓјгѓ€г‚’е›єе®љгЃ™г‚‹е ґеђ€дёЌи¦Ѓ)
+    $ArgPid(г‚Ёгѓіг‚іе¤±ж•—гЃ—гЃЄгЃ„з‚єгЃ«еї…й €)
+-Priority: гѓ—гѓ­г‚»г‚№е„Єе…€еє¦ MSDNгЃ®Process.PriorityClassеЏ‚з…§ (Normal,Idle,High,RealTime,BelowNormal,AboveNormal) вЂ»еї…й €гЃ§гЃЇгЃЄгЃ„
+-Affinity: дЅїз”ЁгЃ™г‚‹и«–зђ†г‚іг‚ўгЃ®жЊ‡е®љ MSDNгЃ®Process.ProcessorAffinityеЏ‚з…§ г‚іг‚ў5(10000)пЅћ12(100000000000)г‚’дЅїз”Ё=0000111111110000(2йЂІ)=4080(10йЂІ)=0xFF0(16йЂІ) вЂ»еї…й €гЃ§гЃЇгЃЄгЃ„
 NVEnc H.264 VBR MinQP
 -Arg "-y -hide_banner -nostats -fflags +discardcorrupt -i `"${env:FilePath}`" ${ArgAudio} -vf bwdif=0:-1:1 -c:v h264_nvenc -preset:v slow -profile:v high -rc:v vbr_minqp -rc-lookahead 32 -spatial-aq 1 -aq-strength 1 -qmin:v 23 -qmax:v 25 -b:v 1500k -maxrate:v 3500k -pix_fmt yuv420p ${ArgPid} -movflags +faststart `"${tmp_folder_path}\${env:FileName}.mp4`""
 QSV H.264 LA-ICQ
@@ -143,50 +159,50 @@ x264 placebo by bel9r
 -Arg "-y -hide_banner -nostats -analyzeduration 30M -probesize 100M -fflags +discardcorrupt -i `"${env:FilePath}`" ${ArgAudio} -vf bwdif=0:-1:1,pp=ac -c:v libx264 -preset:v placebo -x264-params crf=${ArgQual}:rc-lookahead=60:qpmin=5:qpmax=40:qpstep=16:qcomp=0.85:mbtree=0:vbv-bufsize=31250:vbv-maxrate=25000:aq-strength=0.35:psy-rd=0.35:keyint=300:bframes=6:partitions=p8x8,b8x8,i8x8,i4x4:merange=64:ref=4:no-dct-decimate=1 -pix_fmt yuv420p -bsf:v h264_metadata=colour_primaries=1:transfer_characteristics=1:matrix_coefficients=1 ${ArgPid} -movflags +faststart `"${tmp_folder_path}\${env:FileName}.mp4`""
 #>
 function VideoEncode {
-    #hevc_nvenc constqp (qpI,P,B‚Нtsѓtѓ@ѓCѓ‹ѓTѓCѓY”»•К‚рЋQЏЖ)
+    #hevc_nvenc constqp (qpI,P,BгЃЇtsгѓ•г‚Ўг‚¤гѓ«г‚µг‚¤г‚єе€¤е€Ґг‚’еЏ‚з…§)
     Invoke-Process -File "${ffpath}\ffmpeg.exe" -Arg "-y -hide_banner -nostats -analyzeduration 30M -probesize 100M -fflags +discardcorrupt -i `"${env:FilePath}`" -s 1280x720 -vcodec libx264 -acodec aac ${ArgPid} `"${tmp_folder_path}\${env:FileName}.mp4`""
 }
 
 #--------------------Post--------------------
-#$False=ErrorЋћ‚М‚ЭЃA$True=ЏнЋћ TwitterЃADiscord‚ЙPost
+#$False=Errorж™‚гЃ®гЃїгЂЃ$True=еёёж™‚ TwitterгЂЃDiscordгЃ«Post
 $InfoPostToggle=$False
 
-#Twitter‹@”\ $False=–іЊшЃA$True=—LЊш
+#Twitterж©џиѓЅ $False=з„ЎеЉ№гЂЃ$True=жњ‰еЉ№
 $tweet_toggle=$False
 #ruby.exe
 $ruby_path='C:\Ruby25-x64\bin\ruby.exe'
 #tweet.rb
 $tweet_rb_path='C:\DTV\EDCB\tweet.rb'
-#SSLЏШ–ѕЏ‘(ЉВ‹«•Пђ”)
+#SSLиЁјжЋж›ё(з’°еўѓе¤‰ж•°)
 $env:ssl_cert_file='C:\DTV\EDCB\cacert.pem'
 
-#Discord‹@”\ $False=–іЊшЃA$True=—LЊш
+#Discordж©џиѓЅ $False=з„ЎеЉ№гЂЃ$True=жњ‰еЉ№
 $discord_toggle=$False
 #webhook url
 $hookUrl='https://discordapp.com/api/webhooks/XXXXXXXXXX'
 
-#BalloonTip‹@”\ $False=–іЊшЃA$True=—LЊш
+#BalloonTipж©џиѓЅ $False=з„ЎеЉ№гЂЃ$True=жњ‰еЉ№
 $balloontip_toggle=$True
 
 <#
-ѓGѓ‰Ѓ[ѓЃѓbѓZЃ[ѓW€к——
-ЃE[EDCB] ^‰жЋё”s‚Й‚ж‚иѓGѓ“ѓRЃ[ѓh•s‰В: tsѓtѓ@ѓCѓ‹‚Є–і‚ў(ѓpѓX‚Є“n‚і‚к‚И‚ў)ЏкЌ‡ЃB^‰жЋё”sЃH
-ЃE[EDCB] PID‚М”»•К•s‰В: ѓXѓgѓЉЃ[ѓЂ‚М‰рђН‚ЄЋё”s€И‘O‚Й•s‰В”\ЃBDrop‰Я‘ЅorѓXѓNѓ‰ѓ“ѓuѓ‹‰рЏњЋё”sЃH
-ЃE[GoogleDrive] 10GB€ИЏг‚М€ЧѓAѓbѓvѓЌЃ[ѓh‚Е‚«‚Ь‚№‚с: GoogleDrive‚МЋd—l‚ЙЌ‡‚н‚№‚йЃB
-ЃE[h264_qsv] device failed (-17): QSV‚МѓGѓ‰Ѓ[ЃBѓ‹Ѓ[ѓv‚µ‚Д•њ‹A‚рЋЋ‚Э‚й‚аЋё”s‚µ‚ЅЏкЌ‡ЃB
-ЃE[mpegts] ѓRЃ[ѓfѓbѓNѓpѓ‰ѓЃЃ[ѓ^‚ЄЊ©‚В‚©‚и‚Ь‚№‚с: PID”»•К‚©‚з“n‚і‚к‚ЅPID‚Є“KђШ‚Е‚И‚ўorffmpeg‚Є”с‘О‰ћ‚МѓXѓgѓЉЃ[ѓЂЃB
-ЃE[aac] ”с‘О‰ћ‚Мѓ`ѓѓѓ“ѓlѓ‹ѓЊѓCѓAѓEѓg: ffmpeg4.0Ѓ`ѓfѓ…ѓAѓ‹ѓ‚ѓm‚рЏ­‚И‚­‚Ж‚аЏ]—€‚М€шђ”‚Е‚Н€µ‚¦‚И‚­‚И‚Б‚ЅЃB
-ЃE[-c:a aac] PID‚М”»•К‚ЙЋё”s: -c:a aacЋћЃBЋw’иѓTЃ[ѓrѓX‚М‚Э(‘SѓTЃ[ѓrѓX‚Е‚И‚ў)^‰ж‚Й‚И‚Б‚Д‚ў‚И‚Ї‚к‚О•K‚ё”­ђ¶ЃB‚Ь‚Ѕ€к’К‚и‚МѓXѓgѓЉЃ[ѓЂ‚Й‘О‰ћ‚і‚№‚Ѕ”¤‚ѕ‚Ї‚З‹N‚±‚й‚©‚а‚µ‚к‚И‚ўЃB
-ЃE[-c:a copy] PID‚М”»•К‚ЙЋё”s: -c:a copyЋћЃBЏг‚Й“Ї‚¶ЃB
-ЃE[-c:a aac] PID‚М”»•К‚ЙЋё”sЃH ExitCode:0: -c:a aacЋћЃBffmpeg‚МЏI—№ѓRЃ[ѓh‚Н0‚ѕ‚Є€ЩЏн‚Є‚ ‚йЃHЏкЌ‡ЃB
-ЃE[-c:a copy] -c:a aac‚©-ss 1‚ЕЋЎ‚й‚в‚В ExitCode:0: -c:a copyЋћЃBЏг‚Й“Ї‚¶ЃB
-ЃE[FFmpeg] –іЊш‚И€шђ”
-ЃE•s–ѕ‚ИѓGѓ‰Ѓ[
+г‚Ёгѓ©гѓјгѓЎгѓѓг‚»гѓјг‚ёдёЂи¦§
+гѓ»[EDCB] йЊІз”»е¤±ж•—гЃ«г‚€г‚Љг‚Ёгѓіг‚ігѓјгѓ‰дёЌеЏЇ: tsгѓ•г‚Ўг‚¤гѓ«гЃЊз„ЎгЃ„(гѓ‘г‚№гЃЊжёЎгЃ•г‚ЊгЃЄгЃ„)е ґеђ€гЂ‚йЊІз”»е¤±ж•—пјџ
+гѓ»[EDCB] PIDгЃ®е€¤е€ҐдёЌеЏЇ: г‚№гѓ€гѓЄгѓјгѓ гЃ®и§ЈжћђгЃЊе¤±ж•—д»Ґе‰ЌгЃ«дёЌеЏЇиѓЅгЂ‚DropйЃЋе¤љorг‚№г‚Їгѓ©гѓігѓ–гѓ«и§Јй™¤е¤±ж•—пјџ
+гѓ»[GoogleDrive] 10GBд»ҐдёЉгЃ®з‚єг‚ўгѓѓгѓ—гѓ­гѓјгѓ‰гЃ§гЃЌгЃѕгЃ›г‚“: GoogleDriveгЃ®д»•ж§гЃ«еђ€г‚ЏгЃ›г‚‹гЂ‚
+гѓ»[h264_qsv] device failed (-17): QSVгЃ®г‚Ёгѓ©гѓјгЂ‚гѓ«гѓјгѓ—гЃ—гЃ¦еѕ©её°г‚’и©¦гЃїг‚‹г‚‚е¤±ж•—гЃ—гЃџе ґеђ€гЂ‚
+гѓ»[mpegts] г‚ігѓјгѓ‡гѓѓг‚Їгѓ‘гѓ©гѓЎгѓјг‚їгЃЊи¦‹гЃ¤гЃ‹г‚ЉгЃѕгЃ›г‚“: PIDе€¤е€ҐгЃ‹г‚‰жёЎгЃ•г‚ЊгЃџPIDгЃЊйЃ©е€‡гЃ§гЃЄгЃ„orffmpegгЃЊйќћеЇѕеїњгЃ®г‚№гѓ€гѓЄгѓјгѓ гЂ‚
+гѓ»[aac] йќћеЇѕеїњгЃ®гѓЃгѓЈгѓігѓЌгѓ«гѓ¬г‚¤г‚ўг‚¦гѓ€: ffmpeg4.0пЅћгѓ‡гѓҐг‚ўгѓ«гѓўгѓЋг‚’е°‘гЃЄгЃЏгЃЁг‚‚еѕ“жќҐгЃ®еј•ж•°гЃ§гЃЇж‰±гЃ€гЃЄгЃЏгЃЄгЃЈгЃџгЂ‚
+гѓ»[-c:a aac] PIDгЃ®е€¤е€ҐгЃ«е¤±ж•—: -c:a aacж™‚гЂ‚жЊ‡е®љг‚µгѓјгѓ“г‚№гЃ®гЃї(е…Ёг‚µгѓјгѓ“г‚№гЃ§гЃЄгЃ„)йЊІз”»гЃ«гЃЄгЃЈгЃ¦гЃ„гЃЄгЃ‘г‚ЊгЃ°еї…гЃљз™єз”џгЂ‚гЃѕгЃџдёЂйЂљг‚ЉгЃ®г‚№гѓ€гѓЄгѓјгѓ гЃ«еЇѕеїњгЃ•гЃ›гЃџз­€гЃ гЃ‘гЃ©иµ·гЃ“г‚‹гЃ‹г‚‚гЃ—г‚ЊгЃЄгЃ„гЂ‚
+гѓ»[-c:a copy] PIDгЃ®е€¤е€ҐгЃ«е¤±ж•—: -c:a copyж™‚гЂ‚дёЉгЃ«еђЊгЃгЂ‚
+гѓ»[-c:a aac] PIDгЃ®е€¤е€ҐгЃ«е¤±ж•—пјџ ExitCode:0: -c:a aacж™‚гЂ‚ffmpegгЃ®зµ‚дє†г‚ігѓјгѓ‰гЃЇ0гЃ гЃЊз•°еёёгЃЊгЃ‚г‚‹пјџе ґеђ€гЂ‚
+гѓ»[-c:a copy] -c:a aacгЃ‹-ss 1гЃ§жІ»г‚‹г‚„гЃ¤ ExitCode:0: -c:a copyж™‚гЂ‚дёЉгЃ«еђЊгЃгЂ‚
+гѓ»[FFmpeg] з„ЎеЉ№гЃЄеј•ж•°
+гѓ»дёЌжЋгЃЄг‚Ёгѓ©гѓј
 #>
 
 #########################################################################################################################
 
-#====================PostЉЦђ”====================
+#====================Postй–ўж•°====================
 function Post {
     param
     (
@@ -196,7 +212,7 @@ function Post {
         [string]$tipicon,
         [string]$tiptitle
     )
-    #—бЉOЃBЋ©“®ЌнЏњ‚Є—LЊш‚МЏкЌ‡ЃAtsЃAts.program.txtЃAts.errЃAmp4‚р‘Ю”р
+    #дѕ‹е¤–гЂ‚и‡Єе‹•е‰Љй™¤гЃЊжњ‰еЉ№гЃ®е ґеђ€гЂЃtsгЂЃts.program.txtгЂЃts.errгЂЃmp4г‚’йЂЂйЃї
     if ($exc)
     {
         if ($TsFolderRound) {
@@ -208,16 +224,16 @@ function Post {
             Copy-Item -LiteralPath "${tmp_folder_path}\${env:FileName}.mp4" "${err_folder_path}" -ErrorAction SilentlyContinue
         }
     }
-    #ErrorЋћ‚ѕ‚Ї‚Е‚И‚­ЃAInfoЋћ‚аPost‚Е‚«‚й‚ж‚¤‚Й‚·‚йѓgѓOѓ‹
+    #Errorж™‚гЃ гЃ‘гЃ§гЃЄгЃЏгЂЃInfoж™‚г‚‚PostгЃ§гЃЌг‚‹г‚€гЃ†гЃ«гЃ™г‚‹гѓ€г‚°гѓ«
     if ($toggle)
     {
-        #TwitterЊxЌђ
+        #Twitterи­¦е‘Љ
         if ($tweet_toggle) {
             $env:content = $content
             &"$ruby_path" "$tweet_rb_path"
             #Start-Process "${ruby_path}" "${tweet_rb_path}" -WindowStyle Hidden -Wait
         }
-        #DiscordЊxЌђ
+        #Discordи­¦е‘Љ
         if ($discord_toggle) {
             $payload=[PSCustomObject]@{
                 content = $content
@@ -229,33 +245,33 @@ function Post {
     }
     #BalloonTip
     if ($balloontip_toggle) {
-        #“Б’и‚МTipIcon‚М‚Э‚рЋg—p‰В
+        #з‰№е®љгЃ®TipIconгЃ®гЃїг‚’дЅїз”ЁеЏЇ
         #[System.Windows.Forms.ToolTipIcon] | Get-Member -Static -Type Property
         $balloon.BalloonTipIcon=[System.Windows.Forms.ToolTipIcon]::$tipicon
-        #•\Ћ¦‚·‚йѓ^ѓCѓgѓ‹
+        #иЎЁз¤єгЃ™г‚‹г‚їг‚¤гѓ€гѓ«
         $balloon.BalloonTipTitle=$tiptitle
-        #•\Ћ¦‚·‚йѓЃѓbѓZЃ[ѓW
+        #иЎЁз¤єгЃ™г‚‹гѓЎгѓѓг‚»гѓјг‚ё
         $balloon.BalloonTipText=$content
-        #balloontip_toggle=1‚И‚з5000ѓ~ѓЉ•bѓoѓ‹Ѓ[ѓ“ѓ`ѓbѓv•\Ћ¦
+        #balloontip_toggle=1гЃЄг‚‰5000гѓџгѓЄз§’гѓђгѓ«гѓјгѓігѓЃгѓѓгѓ—иЎЁз¤є
         $balloon.ShowBalloonTip(5000)
-        #5•b‘Т‚Б‚Д
+        #5з§’еѕ…гЃЈгЃ¦
         Start-Sleep -Seconds 5
     }
-    #ѓ^ѓXѓNѓgѓЊѓCѓAѓCѓRѓ“”с•\Ћ¦(€ЩЏнЏI—№Ћћ‚НЋАЌs‚і‚к‚ёѓgѓЊѓC‚Й–S—м‚ЄЋc‚йЋd—l)
+    #г‚їг‚№г‚Їгѓ€гѓ¬г‚¤г‚ўг‚¤г‚ігѓійќћиЎЁз¤є(з•°еёёзµ‚дє†ж™‚гЃЇе®џиЎЊгЃ•г‚ЊгЃљгѓ€гѓ¬г‚¤гЃ«дєЎйњЉгЃЊж®‹г‚‹д»•ж§)
     $balloon.Visible=$False
 }
 
-#Ћ‹’®—\–с‚И‚зЏI—№
+#и¦–иЃґдє€зґ„гЃЄг‚‰зµ‚дє†
 if ($env:RecMode -eq 4) {
-    return "Ћ‹’®—\–с‚М€ЧЏI—№"
+    return "и¦–иЃґдє€зґ„гЃ®з‚єзµ‚дє†"
 }
 if ("${env:FilePath}" -eq $null) {
-    Post -Exc $True -Toggle $True -Content "Error:${env:Title}`n[EDCB] ^‰жЋё”s‚Й‚ж‚иѓGѓ“ѓRЃ[ѓh•s‰В" -TipIcon 'Error' -TipTitle '^‰жЋё”s'
+    Post -Exc $True -Toggle $True -Content "Error:${env:Title}`n[EDCB] йЊІз”»е¤±ж•—гЃ«г‚€г‚Љг‚Ёгѓіг‚ігѓјгѓ‰дёЌеЏЇ" -TipIcon 'Error' -TipTitle 'йЊІз”»е¤±ж•—'
 }
 
-#====================Invoke-ProcessЉЦђ”====================
-#ffmpegЃA&ffmpegЃA.\ffmpeg:ffmpeg‚Є€шђ”‚рђі‚µ‚­”FЋЇ‚µ‚И‚ў(ѓtѓ@ѓCѓ‹–ј‚­‚з‚ў‚И‚з-f mpegts‚ЕЌs‚Ї‚й‚Ї‚З‚а‚¤‚ў‚ў‚Е‚·)
-#Start-Process ffmpeg:-NoNewWindow‚НWrite-HostЃH-RedirectStandardOutputЃAError‚Нѓtѓ@ѓCѓ‹‚М‚ЭЃA-PassThru‚НExitCode‚НЋу‚ЇЋж‚к‚Д‚а.StandardOutputЃAError‚НЋу‚ЇЋж‚к‚И‚ўЋd—l
+#====================Invoke-Processй–ўж•°====================
+#ffmpegгЂЃ&ffmpegгЂЃ.\ffmpeg:ffmpegгЃЊеј•ж•°г‚’ж­ЈгЃ—гЃЏиЄЌи­гЃ—гЃЄгЃ„(гѓ•г‚Ўг‚¤гѓ«еђЌгЃЏг‚‰гЃ„гЃЄг‚‰-f mpegtsгЃ§иЎЊгЃ‘г‚‹гЃ‘гЃ©г‚‚гЃ†гЃ„гЃ„гЃ§гЃ™)
+#Start-Process ffmpeg:-NoNewWindowгЃЇWrite-Hostпјџ-RedirectStandardOutputгЂЃErrorгЃЇгѓ•г‚Ўг‚¤гѓ«гЃ®гЃїгЂЃ-PassThruгЃЇExitCodeгЃЇеЏ—гЃ‘еЏ–г‚ЊгЃ¦г‚‚.StandardOutputгЂЃErrorгЃЇеЏ—гЃ‘еЏ–г‚ЊгЃЄгЃ„д»•ж§
 function Invoke-Process {
     param
     (
@@ -266,72 +282,72 @@ function Invoke-Process {
     )
     Write-Output "Invoke-Process:$file $arg"
 
-    #ђЭ’и
-    #ProcessStartInfoѓNѓ‰ѓX‚рѓCѓ“ѓXѓ^ѓ“ѓX‰»
+    #иЁ­е®љ
+    #ProcessStartInfoг‚Їгѓ©г‚№г‚’г‚¤гѓіг‚№г‚їгѓіг‚№еЊ–
     $psi=New-Object System.Diagnostics.ProcessStartInfo
-    #ѓAѓvѓЉѓPЃ[ѓVѓ‡ѓ“ѓtѓ@ѓCѓ‹–ј
+    #г‚ўгѓ—гѓЄг‚±гѓјг‚·гѓ§гѓігѓ•г‚Ўг‚¤гѓ«еђЌ
     $psi.FileName = $file
-    #€шђ”
+    #еј•ж•°
     $psi.Arguments = $arg
-    #•WЏЂѓGѓ‰Ѓ[Џo—Н‚ѕ‚Ї‚р“ЇЉъЏo—Н(’Ќ€У:$true‚Н1‚В‚ѕ‚Ї‚Й‚µ‚И‚ў‚ЖѓfѓbѓhѓЌѓbѓN‚µ‚Ь‚·)
+    #жЁ™жє–г‚Ёгѓ©гѓје‡єеЉ›гЃ гЃ‘г‚’еђЊжњџе‡єеЉ›(жіЁж„Џ:$trueгЃЇ1гЃ¤гЃ гЃ‘гЃ«гЃ—гЃЄгЃ„гЃЁгѓ‡гѓѓгѓ‰гѓ­гѓѓг‚ЇгЃ—гЃѕгЃ™)
     $psi.UseShellExecute = $false
     $psi.RedirectStandardInput = $false
     $psi.RedirectStandardOutput = $false
     $psi.RedirectStandardError = $true
     $psi.WindowStyle = [System.Diagnostics.ProcessWindowStyle]::Hidden
 
-    #ЋАЌs
-    #ProcessѓNѓ‰ѓX‚рѓCѓ“ѓXѓ^ѓ“ѓX‰»
+    #е®џиЎЊ
+    #Processг‚Їгѓ©г‚№г‚’г‚¤гѓіг‚№г‚їгѓіг‚№еЊ–
     $p=New-Object System.Diagnostics.Process
-    #ђЭ’и‚р“З‚ЭЌћ‚Ю
+    #иЁ­е®љг‚’иЄ­гЃїиѕјг‚Ђ
     $p.StartInfo = $psi
-    #ѓvѓЌѓZѓXЉJЋn
+    #гѓ—гѓ­г‚»г‚№й–‹е§‹
     $p.Start() > $Null
-    #ѓvѓЌѓZѓbѓTђeaђ«
+    #гѓ—гѓ­г‚»гѓѓг‚µи¦Єе’ЊжЂ§
     if ($affinity)
     {
         #(Get-Process -Id $p.Id).ProcessorAffinity=[int]"$Affinity"
         $p.ProcessorAffinity = [int]"$affinity"
     }
-    #ѓvѓЌѓZѓX—Dђж“x
+    #гѓ—гѓ­г‚»г‚№е„Єе…€еє¦
     if ($priority)
     {
         $p.PriorityClass = $priority
     }
-    #•WЏЂѓGѓ‰Ѓ[Џo—Н‚рѓvѓЌѓZѓXЏI—№‚Ь‚Е“З‚Ю
+    #жЁ™жє–г‚Ёгѓ©гѓје‡єеЉ›г‚’гѓ—гѓ­г‚»г‚№зµ‚дє†гЃѕгЃ§иЄ­г‚Ђ
     $script:StdErr = $Null
     while (!$p.HasExited)
     {
         $script:StdErr += "$($p.StandardError.ReadLine())`n"
     }
-    #ѓvѓЌѓZѓX‚М•WЏЂѓGѓ‰Ѓ[Џo—Н‚р•Пђ”‚ЙЉi”[(’Ќ€У:WaitForExit‚М‘O‚ЙЏ‘‚©‚И‚ў‚ЖѓfѓbѓhѓЌѓbѓN‚µ‚Ь‚·)
+    #гѓ—гѓ­г‚»г‚№гЃ®жЁ™жє–г‚Ёгѓ©гѓје‡єеЉ›г‚’е¤‰ж•°гЃ«ж јзґЌ(жіЁж„Џ:WaitForExitгЃ®е‰ЌгЃ«ж›ёгЃ‹гЃЄгЃ„гЃЁгѓ‡гѓѓгѓ‰гѓ­гѓѓг‚ЇгЃ—гЃѕгЃ™)
     #$script:StdErr=$p.StandardError.ReadToEnd()
-    #ѓvѓЌѓZѓXЏI—№‚Ь‚Е‘Т‹@
+    #гѓ—гѓ­г‚»г‚№зµ‚дє†гЃѕгЃ§еѕ…ж©џ
     #$p.WaitForExit()
-    #ЏI—№ѓRЃ[ѓh‚р•Пђ”‚ЙЉi”[
+    #зµ‚дє†г‚ігѓјгѓ‰г‚’е¤‰ж•°гЃ«ж јзґЌ
     $script:ExitCode = $p.ExitCode
-    #ѓЉѓ\Ѓ[ѓX‚рЉJ•ъ
+    #гѓЄг‚Ѕгѓјг‚№г‚’й–‹ж”ѕ
     $p.Close()
 }
 
 #====================NotifyIcon====================
-#System.Windows.FormsѓNѓ‰ѓX‚рPowerShellѓZѓbѓVѓ‡ѓ“‚Й’З‰Б
+#System.Windows.Formsг‚Їгѓ©г‚№г‚’PowerShellг‚»гѓѓг‚·гѓ§гѓігЃ«иїЅеЉ 
 Add-Type -AssemblyName System.Windows.Forms
-#NotifyIconѓNѓ‰ѓX‚рѓCѓ“ѓXѓ^ѓ“ѓX‰»
+#NotifyIconг‚Їгѓ©г‚№г‚’г‚¤гѓіг‚№г‚їгѓіг‚№еЊ–
 $balloon=New-Object System.Windows.Forms.NotifyIcon
-#powershell‚МѓAѓCѓRѓ“‚рЋg—p
+#powershellгЃ®г‚ўг‚¤г‚ігѓіг‚’дЅїз”Ё
 $balloon.Icon=[System.Drawing.Icon]::ExtractAssociatedIcon('C:\Windows\System32\WindowsPowerShell\v1.0\powershell.exe')
-#NotifyIcon.Text‚Є64•¶Ћљ‚р’ґ‚¦‚й‚Ж—бЉOЃAString.Substring‚МЉJЋn’l~ЏI—№’l‚Є•¶Ћљђ”‚р’ґ‚¦‚й‚Ж—бЉO
+#NotifyIcon.TextгЃЊ64ж–‡е­—г‚’и¶…гЃ€г‚‹гЃЁдѕ‹е¤–гЂЃString.SubstringгЃ®й–‹е§‹еЂ¤~зµ‚дє†еЂ¤гЃЊж–‡е­—ж•°г‚’и¶…гЃ€г‚‹гЃЁдѕ‹е¤–
 switch (("$($MyInvocation.MyCommand.Name):${env:FileName}.ts").Length) {
     {$_ -ge 64} {$TextLength="63"}
     {$_ -lt 64} {$TextLength="$_"}
 }
-#ѓ^ѓXѓNѓgѓЊѓCѓAѓCѓRѓ“‚Мѓqѓ“ѓg‚Йѓtѓ@ѓCѓ‹–ј‚р•\Ћ¦
+#г‚їг‚№г‚Їгѓ€гѓ¬г‚¤г‚ўг‚¤г‚ігѓігЃ®гѓ’гѓігѓ€гЃ«гѓ•г‚Ўг‚¤гѓ«еђЌг‚’иЎЁз¤є
 $balloon.Text=([string]($MyInvocation.MyCommand.Name) + ":${env:FileName}.ts").SubString(0,$TextLength)
-#ѓ^ѓXѓNѓgѓЊѓCѓAѓCѓRѓ“•\Ћ¦
+#г‚їг‚№г‚Їгѓ€гѓ¬г‚¤г‚ўг‚¤г‚ігѓіиЎЁз¤є
 $balloon.Visible=$True
 
-#ѓЌѓO—LЊшЋћЃANotifyIconѓNѓЉѓbѓN‚ЕѓЌѓO‚рЉщ’и‚МѓeѓLѓXѓgѓGѓfѓBѓ^‚ЕЉJ‚­
+#гѓ­г‚°жњ‰еЉ№ж™‚гЂЃNotifyIconг‚ЇгѓЄгѓѓг‚ЇгЃ§гѓ­г‚°г‚’ж—ўе®љгЃ®гѓ†г‚­г‚№гѓ€г‚Ёгѓ‡г‚Јг‚їгЃ§й–‹гЃЏ
 if ($log_toggle)
 {
     $balloon.add_Click({
@@ -342,25 +358,25 @@ if ($log_toggle)
     })
 }
 
-#====================ѓЌѓO====================
-#ѓЌѓO‚Мѓ\Ѓ[ѓg—б: (sls -path "$log_path\*.txt" 'faild' -SimpleMatch).Path
-#log_toggle=$True‚И‚з‚ОЋАЌs
+#====================гѓ­г‚°====================
+#гѓ­г‚°гЃ®г‚Ѕгѓјгѓ€дѕ‹: (sls -path "$log_path\*.txt" 'faild' -SimpleMatch).Path
+#log_toggle=$TrueгЃЄг‚‰гЃ°е®џиЎЊ
 if ($log_toggle) {
-    #ѓЌѓOЋж‚иЉJЋn
+    #гѓ­г‚°еЏ–г‚Љй–‹е§‹
     Start-Transcript -LiteralPath "${log_path}\${env:FileName}.txt"
-    #^‰ж—pѓAѓvѓЉ‚М‹N“®ђ”‚рЋж“ѕ
+    #йЊІз”»з”Ёг‚ўгѓ—гѓЄгЃ®иµ·е‹•ж•°г‚’еЏ–еѕ—
     #$RecCount=(Get-Process -ErrorAction 0 "EpgDataCap_bon","TVTest").Count
-    #Write-Output "“ЇЋћ^‰жђ”:$RecCount"
-    #Get-ChildItem‚ЕѓЌѓOѓtѓHѓ‹ѓ_‚Мtxtѓtѓ@ѓCѓ‹‚рЋж“ѕЃAЌXђV“ъЌ~Џ‡‚Еѓ\Ѓ[ѓg‚µЃAlogcnt_maxЊВ”т‚О‚µЃAForEach-Object‚ЕRemove-Itemѓ‹Ѓ[ѓv
+    #Write-Output "еђЊж™‚йЊІз”»ж•°:$RecCount"
+    #Get-ChildItemгЃ§гѓ­г‚°гѓ•г‚©гѓ«гѓЂгЃ®txtгѓ•г‚Ўг‚¤гѓ«г‚’еЏ–еѕ—гЂЃж›ґж–°ж—Ґй™Ќй †гЃ§г‚Ѕгѓјгѓ€гЃ—гЂЃlogcnt_maxеЂ‹йЈ›гЃ°гЃ—гЂЃForEach-ObjectгЃ§Remove-Itemгѓ«гѓјгѓ—
     Get-ChildItem "${log_path}\*.txt" | Sort-Object LastWriteTime -Descending | Select-Object -Skip $logcnt_max | ForEach-Object {
         Remove-Item -LiteralPath "$_"
-        Write-Output "ѓЌѓOЌнЏњ:$_"
+        Write-Output "гѓ­г‚°е‰Љй™¤:$_"
     }
 }
 
 
-#====================tsЃEmp4‚МЋ©“®ЌнЏњ====================
-#ѓtѓHѓ‹ѓ_‚МЌ‡ЊvѓTѓCѓY‚рђЭ’и’l€И‰є‚ЙЉЫ‚ЯЌћ‚ЮЉЦђ”
+#====================tsгѓ»mp4гЃ®и‡Єе‹•е‰Љй™¤====================
+#гѓ•г‚©гѓ«гѓЂгЃ®еђ€иЁ€г‚µг‚¤г‚єг‚’иЁ­е®љеЂ¤д»Ґдё‹гЃ«дёёг‚Ѓиѕјг‚Ђй–ўж•°
 function FolderRound {
     param
     (
@@ -371,32 +387,32 @@ function FolderRound {
     )
     if ($toggle)
     {
-        #Џ‰Љъ’l
+        #е€ќжњџеЂ¤
         $delcnt=-1
-        #•K‚ё1‰с‚НЋАЌsЃAѓtѓHѓ‹ѓ_“а‚МђV‚µ‚ўѓtѓ@ѓCѓ‹‚рSkip‚·‚йђ”$i‚р‘ќ‚в‚µ‚Д‚ў‚Б‚Д$maintsize‚р$round€И‰є‚ЙЉЫ‚ЯЌћ‚Юѓ‹Ѓ[ѓv
+        #еї…гЃљ1е›ћгЃЇе®џиЎЊгЂЃгѓ•г‚©гѓ«гѓЂе†…гЃ®ж–°гЃ—гЃ„гѓ•г‚Ўг‚¤гѓ«г‚’SkipгЃ™г‚‹ж•°$iг‚’еў—г‚„гЃ—гЃ¦гЃ„гЃЈгЃ¦$maintsizeг‚’$roundд»Ґдё‹гЃ«дёёг‚Ѓиѕјг‚Ђгѓ«гѓјгѓ—
         do {
             $delcnt++
             $maintsize=(Get-ChildItem "$path\*.$ext" | Sort-Object LastWriteTime -Descending | Select-Object -Skip $delcnt | Measure-Object -Sum Length).Sum
         } while ($maintsize -gt $round)
-        #ђж’цSkip‚µ‚Ѕѓtѓ@ѓCѓ‹‚рЋАЌЫ‚ЙЌнЏњ
+        #е…€зЁ‹SkipгЃ—гЃџгѓ•г‚Ўг‚¤гѓ«г‚’е®џйљ›гЃ«е‰Љй™¤
         Get-ChildItem "$path\*.$ext" | Sort-Object LastWriteTime | Select-Object -First $delcnt | ForEach-Object {
-            #ts‚©mp4‚рЌнЏњ
+            #tsгЃ‹mp4г‚’е‰Љй™¤
             Remove-Item -LiteralPath "$path\$($_.BaseName).$ext" -ErrorAction SilentlyContinue
-            $dellog="ЌнЏњ:$($_.BaseName).$ext"
-            #ts‚рЌнЏњ’†‚МЏкЌ‡ЃA“Ї–ј‚Мts.program.txtЃAts.err‚аЌнЏњ
+            $dellog="е‰Љй™¤:$($_.BaseName).$ext"
+            #tsг‚’е‰Љй™¤дё­гЃ®е ґеђ€гЂЃеђЊеђЌгЃ®ts.program.txtгЂЃts.errг‚‚е‰Љй™¤
             if ("$ext" -eq "ts") {
                 Remove-Item -LiteralPath "$path\$($_.BaseName).$ext.program.txt" -ErrorAction SilentlyContinue
                 Remove-Item -LiteralPath "$path\$($_.BaseName).$ext.err" -ErrorAction SilentlyContinue
-                $dellog+="ЃA.program.txtЃA.err"
+                $dellog+="гЂЃ.program.txtгЂЃ.err"
             }
             Write-Output $dellog
         }
-        Write-Output "${ext}ѓtѓHѓ‹ѓ_:$([math]::round(${maintsize}/1GB,2))GB"
+        Write-Output "${ext}гѓ•г‚©гѓ«гѓЂ:$([math]::round(${maintsize}/1GB,2))GB"
     } elseif (!($toggle))
     {
-        #’ґ‰ЯЋћ‚МЊxЌђ
+        #и¶…йЃЋж™‚гЃ®и­¦е‘Љ
         if ($((Get-ChildItem "$path" | Measure-Object -Sum Length).Sum) -gt $round) {
-            $err_detail="`n[FolderRound] ${ext}ѓfѓBѓЊѓNѓgѓЉ‚Є${round}‚р’ґ‰Я"
+            $err_detail="`n[FolderRound] ${ext}гѓ‡г‚Јгѓ¬г‚Їгѓ€гѓЄгЃЊ${round}г‚’и¶…йЃЋ"
         }
     }
 
@@ -405,29 +421,29 @@ function FolderRound {
 FolderRound -Toggle $TsFolderRound -Ext "ts" -Path "$env:FolderPath" -Round $ts_folder_max
 #mp4
 FolderRound -Toggle $Mp4FolderRound -Ext "mp4" -Path "$mp4_folder_path" -Round $mp4_folder_max
-#”Ф‘gЏо•сѓtѓ@ѓCѓ‹‚рЌнЏњ
+#з•Єзµ„жѓ…е ±гѓ•г‚Ўг‚¤гѓ«г‚’е‰Љй™¤
 Remove-Item -LiteralPath "${env:FilePath}.program.txt" -ErrorAction SilentlyContinue
 
-#====================jpgЏo—Н====================
-#jpgЏo—Н‹@”\‚Є—LЊш(jpg_toggle=1)ЉЋ‚Вenv:Addkey(Ћ©“®—\–сЋћ‚МѓLЃ[ѓЏЃ[ѓh)‚Йjpg_addkey(Ћw’и‚М•¶Ћљ)‚ЄЉЬ‚Ь‚к‚Д‚ў‚йЏкЌ‡‚НA”Фjpg‚аЏo—Н
+#====================jpgе‡єеЉ›====================
+#jpgе‡єеЉ›ж©џиѓЅгЃЊжњ‰еЉ№(jpg_toggle=1)дё”гЃ¤env:Addkey(и‡Єе‹•дє€зґ„ж™‚гЃ®г‚­гѓјгѓЇгѓјгѓ‰)гЃ«jpg_addkey(жЊ‡е®љгЃ®ж–‡е­—)гЃЊеђ«гЃѕг‚ЊгЃ¦гЃ„г‚‹е ґеђ€гЃЇйЂЈз•Єjpgг‚‚е‡єеЉ›
 if (($jpg_toggle) -And ("$env:Addkey" -match "$jpg_addkey")) {
-    Write-Output "jpgЏo—Н"
-    #ђ¶TS‚М‰Ў‚Є1920‚©1440‚©’І‚Ч‚й
+    Write-Output "jpgе‡єеЉ›"
+    #з”џTSгЃ®жЁЄгЃЊ1920гЃ‹1440гЃ‹иЄїгЃ№г‚‹
     $ts_width=[xml](&"${ffpath}\ffprobe.exe" -v quiet -i "${env:FilePath}" -show_entries stream=width -print_format xml 2>&1)
     $ts_width=$ts_width.ffprobe.streams.stream.width
-    #SAR”д(1440x1080‚µ‚©‘z’и‚µ‚Д‚И‚ў‚Ї‚З)‚Й‚ж‚йѓtѓBѓ‹ѓ^ђЭ’иЃAjpgЏo—Н
+    #SARжЇ”(1440x1080гЃ—гЃ‹жѓіе®љгЃ—гЃ¦гЃЄгЃ„гЃ‘гЃ©)гЃ«г‚€г‚‹гѓ•г‚Јгѓ«г‚їиЁ­е®љгЂЃjpgе‡єеЉ›
     if ("$ts_width" -eq "1440") {
         $ArgScale=',scale=1920:1080'
     }
-    #jpg—pffmpeg€шђ”‚р’x‰„“WЉJ
+    #jpgз”Ёffmpegеј•ж•°г‚’йЃ…е»¶е±•й–‹
     ImageEncode
 }
 
-#====================tsѓtѓ@ѓCѓ‹ѓTѓCѓY”»•К====================
-#tsѓtѓ@ѓCѓ‹ѓTѓCѓY‚рЋж“ѕ
+#====================tsгѓ•г‚Ўг‚¤гѓ«г‚µг‚¤г‚єе€¤е€Ґ====================
+#tsгѓ•г‚Ўг‚¤гѓ«г‚µг‚¤г‚єг‚’еЏ–еѕ—
 $ts_size=(Get-ChildItem -LiteralPath "${env:FilePath}").Length
 if ($tssize_toggle) {
-    #и‡’l$tssize_max€И‰є‚И‚з’КЏн•iЋї$quality_normalЃA‚ж‚и‘е‚«‚ў‚И‚з’б•iЋї$quality_low
+    #й–ѕеЂ¤$tssize_maxд»Ґдё‹гЃЄг‚‰йЂљеёёе“ЃиіЄ$quality_normalгЂЃг‚€г‚Ље¤§гЃЌгЃ„гЃЄг‚‰дЅЋе“ЃиіЄ$quality_low
     switch ($ts_size) {
         {$_ -le $tssize_max} {$ArgQual="$quality_normal"}
         {$_ -gt $tssize_max} {$ArgQual="$quality_low"}
@@ -435,30 +451,30 @@ if ($tssize_toggle) {
     Write-Output "ArgQual:$ArgQual"
 }
 
-#====================ѓfѓ…ѓAѓ‹ѓ‚ѓm‚М”»•К====================
-#”Ф‘gЏо•сѓtѓ@ѓCѓ‹‚Є‚ ‚иѓfѓ…ѓAѓ‹ѓ‚ѓm‚Ж‚ў‚¤•¶Ћљ—с‚Є‚ ‚к‚ОTrueЃA•¶Ћљ—с‚Є‚И‚ўЏкЌ‡‚НFalseЃA”Ф‘gЏо•сѓtѓ@ѓCѓ‹‚Є–і‚Ї‚к‚ОNull
-if (Get-Content -LiteralPath "${env:FilePath}.program.txt" | Select-String -SimpleMatch 'ѓfѓ…ѓAѓ‹ѓ‚ѓm' -quiet) {
+#====================гѓ‡гѓҐг‚ўгѓ«гѓўгѓЋгЃ®е€¤е€Ґ====================
+#з•Єзµ„жѓ…е ±гѓ•г‚Ўг‚¤гѓ«гЃЊгЃ‚г‚Љгѓ‡гѓҐг‚ўгѓ«гѓўгѓЋгЃЁгЃ„гЃ†ж–‡е­—е€—гЃЊгЃ‚г‚ЊгЃ°TrueгЂЃж–‡е­—е€—гЃЊгЃЄгЃ„е ґеђ€гЃЇFalseгЂЃз•Єзµ„жѓ…е ±гѓ•г‚Ўг‚¤гѓ«гЃЊз„ЎгЃ‘г‚ЊгЃ°Null
+if (Get-Content -LiteralPath "${env:FilePath}.program.txt" | Select-String -SimpleMatch 'гѓ‡гѓҐг‚ўгѓ«гѓўгѓЋ' -quiet) {
     $ArgAudio=$audio_dualmono
 } else {
     $ArgAudio=$audio_normal
 }
 Write-Output "ArgAudio:$ArgAudio"
 
-#====================PID‚М”»•К====================
-#PID€шђ”‚МђЭ’и
-#ffprobe‚Еcodec_type,height,id‚рѓ\Ѓ[ѓg
+#====================PIDгЃ®е€¤е€Ґ====================
+#PIDеј•ж•°гЃ®иЁ­е®љ
+#ffprobeгЃ§codec_type,height,idг‚’г‚Ѕгѓјгѓ€
 $programs = [xml](&"$ffpath\ffprobe.exe" -v quiet -i "${env:FilePath}" -show_entries stream=codec_type,height,id,channels -print_format xml 2>&1)
 $programs.ffprobe.streams.stream
 $programs.ffprobe.streams.stream | foreach {
-    #‰р‘њ“x‚М‘е‚«‚ўVideoѓXѓgѓЉЃ[ѓЂ‚р‘I‚Ф
-    #xml‚М—v‘f‚НString‚И‚М‚Еint‚Й‚·‚й•K—v‚ ‚и
+    #и§ЈеѓЏеє¦гЃ®е¤§гЃЌгЃ„Videoг‚№гѓ€гѓЄгѓјгѓ г‚’йЃёгЃ¶
+    #xmlгЃ®и¦Ѓзґ гЃЇStringгЃЄгЃ®гЃ§intгЃ«гЃ™г‚‹еї…и¦ЃгЃ‚г‚Љ
     if (($_.codec_type -eq "video") -And ($_.height -ne "0") -And ([int]($_.height) -gt [int]($otherheight)))
     {
         $otherheight = $_.height
         $ArgPid = "-map i:$($_.id)"
     }
 }
-#Video‚МPID‚Мђж“Є(0x1..)‚Ж€к’v‚·‚йAudioѓXѓgѓЉЃ[ѓЂ‚р€шђ”‚Й’З‰Б
+#VideoгЃ®PIDгЃ®е…€й ­(0x1..)гЃЁдёЂи‡ґгЃ™г‚‹Audioг‚№гѓ€гѓЄгѓјгѓ г‚’еј•ж•°гЃ«иїЅеЉ 
 $programs.ffprobe.streams.stream | foreach {
     if (($_.codec_type -eq "audio") -And ($_.channels -ne "0") -And ($($_.id).Substring(0,3) -eq $ArgPid.Substring(7,3)))
     {
@@ -467,62 +483,62 @@ $programs.ffprobe.streams.stream | foreach {
 }
 Write-Output "ArgPid:$ArgPid"
 
-#====================ѓGѓ“ѓRЃ[ѓh====================
-#ѓJѓEѓ“ѓg‚р0‚ЙѓЉѓZѓbѓg
+#====================г‚Ёгѓіг‚ігѓјгѓ‰====================
+#г‚«г‚¦гѓігѓ€г‚’0гЃ«гѓЄг‚»гѓѓгѓ€
 $cnt=0
-#ЏI—№ѓRЃ[ѓh‚Є1ЉЋ‚Вѓ‹Ѓ[ѓvѓJѓEѓ“ѓg‚Є50–ў–ћ‚Ь‚Е‚МЉФЃAѓGѓ“ѓRЃ[ѓh‚рЋЋ‚Э‚й
+#зµ‚дє†г‚ігѓјгѓ‰гЃЊ1дё”гЃ¤гѓ«гѓјгѓ—г‚«г‚¦гѓігѓ€гЃЊ50жњЄжєЂгЃѕгЃ§гЃ®й–“гЂЃг‚Ёгѓіг‚ігѓјгѓ‰г‚’и©¦гЃїг‚‹
 do {
     $cnt++
-    #ЌДЋЋЌsЋћ‚©‚зѓNЃ[ѓ‹ѓ^ѓCѓЂ‚р’З‰Б
+    #е†Ќи©¦иЎЊж™‚гЃ‹г‚‰г‚Їгѓјгѓ«г‚їг‚¤гѓ г‚’иїЅеЉ 
     if ($cnt -ge 2) {
         Start-Sleep -s 60
     }
-    #ѓGѓ“ѓR mp4—pffmpeg€шђ”‚р’x‰„“WЉJ
+    #г‚Ёгѓіг‚і mp4з”Ёffmpegеј•ж•°г‚’йЃ…е»¶е±•й–‹
     VideoEncode
-    #ѓGѓ“ѓR1‰с–Ъ‚Жђ¬ЊчЋћ(ExitCode:0)‚МѓЌѓO‚ѕ‚Ї‚ЕЏ\•Є
+    #г‚Ёгѓіг‚і1е›ћз›®гЃЁж€ђеЉџж™‚(ExitCode:0)гЃ®гѓ­г‚°гЃ гЃ‘гЃ§еЌЃе€†
     if (($cnt -le 1) -Or ($ExitCode -eq 0)) {
-        #ѓvѓЌѓZѓX‚М•WЏЂѓGѓ‰Ѓ[Џo—Н‚рѓVѓFѓ‹‚М•WЏЂЏo—Н‚ЙЏo—Н
+        #гѓ—гѓ­г‚»г‚№гЃ®жЁ™жє–г‚Ёгѓ©гѓје‡єеЉ›г‚’г‚·г‚§гѓ«гЃ®жЁ™жє–е‡єеЉ›гЃ«е‡єеЉ›
         Write-Output $StdErr
-        #ѓGѓ“ѓRЊг‚Мmp4‚Мѓtѓ@ѓCѓ‹ѓTѓCѓY
+        #г‚Ёгѓіг‚іеѕЊгЃ®mp4гЃ®гѓ•г‚Ўг‚¤гѓ«г‚µг‚¤г‚є
         $mp4_size=$(Get-ChildItem -LiteralPath "${tmp_folder_path}\${env:FileName}.mp4").Length
     }
 } while (($ExitCode -eq 1) -And ($cnt -lt 50))
-#ЌЕЏI“I‚ИѓGѓ“ѓRЃ[ѓh‰сђ”ЃAЏI—№ѓRЃ[ѓhЃAѓtѓ@ѓCѓ‹ѓTѓCѓY
-Write-Output "ѓGѓ“ѓRЃ[ѓh‰сђ”:$cnt"
+#жњЂзµ‚зљ„гЃЄг‚Ёгѓіг‚ігѓјгѓ‰е›ћж•°гЂЃзµ‚дє†г‚ігѓјгѓ‰гЂЃгѓ•г‚Ўг‚¤гѓ«г‚µг‚¤г‚є
+Write-Output "г‚Ёгѓіг‚ігѓјгѓ‰е›ћж•°:$cnt"
 Write-Output "ExitCode:$ExitCode"
 $PostFileSize="`nts:$([math]::round(${ts_size}/1GB,2))GB mp4:$([math]::round(${mp4_size}/1MB,0))MB"
 $PostFileSize
 
 #====================Backup and Sync====================
-#Invoke-Process‚©‚з“n‚і‚к‚Ѕ$StdErr‚©‚зѓXѓyЃ[ѓX‚рЏБ‚·
+#Invoke-ProcessгЃ‹г‚‰жёЎгЃ•г‚ЊгЃџ$StdErrгЃ‹г‚‰г‚№гѓљгѓјг‚№г‚’ж¶€гЃ™
 $StdErr=($StdErr -replace " ","")
-#ffmpeg‚МЏI—№ѓRЃ[ѓhЃAmp4‚Мѓtѓ@ѓCѓ‹ѓTѓCѓY‚Й‚ж‚йЏрЊЏ•ЄЉт
+#ffmpegгЃ®зµ‚дє†г‚ігѓјгѓ‰гЂЃmp4гЃ®гѓ•г‚Ўг‚¤гѓ«г‚µг‚¤г‚єгЃ«г‚€г‚‹жќЎд»¶е€†еІђ
 if ($ExitCode -gt 0)
 {
-    #$StdErr‚рѓ\Ѓ[ѓg‚µPost“а—e‚рЊ€‚Я‚й
+    #$StdErrг‚’г‚Ѕгѓјгѓ€гЃ—Postе†…е®№г‚’ж±єг‚Ѓг‚‹
     switch ($StdErr)
     {
         {$_ -match 'Errorduringencoding:devicefailed'} {$err_detail+="`n[h264_qsv] device failed (-17)"}
-        {$_ -match 'Couldnotfindcodecparameters'} {$err_detail+="`n[mpegts] PID‚М”»•К‚ЙЋё”s"}
-        {$_ -match 'Unsupportedchannellayout'} {$err_detail+="`n[aac] ”с‘О‰ћ‚Мѓ`ѓѓѓ“ѓlѓ‹ѓЊѓCѓAѓEѓg"}
-        {$_ -match 'Toomanypacketsbuffered'} {$err_detail+="`n[-c:a aac] PID‚М”»•К‚ЙЋё”s"}
-        {$_ -match 'Inputpackettoosmall'} {$err_detail+="`n[-c:a copy] PID‚М”»•К‚ЙЋё”s"}
-        {$_ -match 'Invalidargument'} {$err_detail+="`n[FFmpeg] –іЊш‚И€шђ”"}
-        default {$err_detail+="`n•s–ѕ‚ИѓGѓ‰Ѓ["}
+        {$_ -match 'Couldnotfindcodecparameters'} {$err_detail+="`n[mpegts] PIDгЃ®е€¤е€ҐгЃ«е¤±ж•—"}
+        {$_ -match 'Unsupportedchannellayout'} {$err_detail+="`n[aac] йќћеЇѕеїњгЃ®гѓЃгѓЈгѓігѓЌгѓ«гѓ¬г‚¤г‚ўг‚¦гѓ€"}
+        {$_ -match 'Toomanypacketsbuffered'} {$err_detail+="`n[-c:a aac] PIDгЃ®е€¤е€ҐгЃ«е¤±ж•—"}
+        {$_ -match 'Inputpackettoosmall'} {$err_detail+="`n[-c:a copy] PIDгЃ®е€¤е€ҐгЃ«е¤±ж•—"}
+        {$_ -match 'Invalidargument'} {$err_detail+="`n[FFmpeg] з„ЎеЉ№гЃЄеј•ж•°"}
+        default {$err_detail+="`nдёЌжЋгЃЄг‚Ёгѓ©гѓј"}
     }
-    #TwitterЃADiscordЃABalloonTip
-    Post -Exc $True -Toggle $True -Content "Error:${env:FileName}.ts${err_detail}${PostFileSize}" -TipIcon 'Error' -TipTitle 'ѓGѓ“ѓRЃ[ѓhЋё”s'
+    #TwitterгЂЃDiscordгЂЃBalloonTip
+    Post -Exc $True -Toggle $True -Content "Error:${env:FileName}.ts${err_detail}${PostFileSize}" -TipIcon 'Error' -TipTitle 'г‚Ёгѓіг‚ігѓјгѓ‰е¤±ж•—'
 } elseif (($googledrive) -And ($mp4_size -gt 10GB))
 {
-    #Post“а—e
-    $err_detail+="`n[GoogleDrive] 10GB€ИЏг‚М€ЧѓAѓbѓvѓЌЃ[ѓh‚Е‚«‚Ь‚№‚с"
-    #TwitterЃADiscordЃABalloonTip
-    Post -Exc $True -Toggle $True -Content "Error:${env:FileName}.ts${err_detail}${PostFileSize}" -TipIcon 'Error' -TipTitle 'ѓAѓbѓvѓЌЃ[ѓhЋё”s'
+    #Postе†…е®№
+    $err_detail+="`n[GoogleDrive] 10GBд»ҐдёЉгЃ®з‚єг‚ўгѓѓгѓ—гѓ­гѓјгѓ‰гЃ§гЃЌгЃѕгЃ›г‚“"
+    #TwitterгЂЃDiscordгЂЃBalloonTip
+    Post -Exc $True -Toggle $True -Content "Error:${env:FileName}.ts${err_detail}${PostFileSize}" -TipIcon 'Error' -TipTitle 'г‚ўгѓѓгѓ—гѓ­гѓјгѓ‰е¤±ж•—'
 } else
 {
-    #mp4‚рmp4_folder_path‚Й“Љ‚°‚й
+    #mp4г‚’mp4_folder_pathгЃ«жЉ•гЃ’г‚‹
     Move-Item -LiteralPath "$tmp_folder_path\$env:FileName.mp4" "$mp4_folder_path"
-    #ѓGѓ‰Ѓ[ѓЃѓbѓZЃ[ѓW‚ЄЉi”[‚і‚к‚Д‚ў‚к‚ОTipIcon‚рWarning‚Й•П‚¦‚й
+    #г‚Ёгѓ©гѓјгѓЎгѓѓг‚»гѓјг‚ёгЃЊж јзґЌгЃ•г‚ЊгЃ¦гЃ„г‚ЊгЃ°TipIconг‚’WarningгЃ«е¤‰гЃ€г‚‹
     if ($err_detail)
     {
         $TipIcon='Warning'
@@ -530,6 +546,6 @@ if ($ExitCode -gt 0)
     {
         $TipIcon='Info'
     }
-    #TwitterЃADiscordЃABalloonTip
-    Post -Exc $False -Toggle $InfoPostToggle -Content "${env:FileName}.ts${err_detail}${PostFileSize}" -TipIcon "$TipIcon" -TipTitle 'ѓGѓ“ѓRЃ[ѓhЏI—№'
+    #TwitterгЂЃDiscordгЂЃBalloonTip
+    Post -Exc $False -Toggle $InfoPostToggle -Content "${env:FileName}.ts${err_detail}${PostFileSize}" -TipIcon "$TipIcon" -TipTitle 'г‚Ёгѓіг‚ігѓјгѓ‰зµ‚дє†'
 }
