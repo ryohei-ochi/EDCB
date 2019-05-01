@@ -81,7 +81,7 @@ $ts_folder_max=150GB
 #閾値を超過した場合、$False=容量警告、$True=mp4を自動削除
 $Mp4FolderRound=$True
 #mp4用フォルダの上限
-$mp4_folder_max=25GB
+$mp4_folder_max=50GB
 
 #--------------------jpg出力--------------------
 #$True=有効 $False=無効
@@ -486,7 +486,7 @@ Write-Output "ArgPid:$ArgPid"
 #====================エンコード====================
 #カウントを0にリセット
 $cnt=0
-#終了コードが1且つループカウントが50未満までの間、エンコードを試みる
+#終了コードが1且つループカウントが5未満までの間、エンコードを試みる
 do {
     $cnt++
     #再試行時からクールタイムを追加
@@ -502,7 +502,7 @@ do {
         #エンコ後のmp4のファイルサイズ
         $mp4_size=$(Get-ChildItem -LiteralPath "${tmp_folder_path}\${env:FileName}.mp4").Length
     }
-} while (($ExitCode -eq 1) -And ($cnt -lt 50))
+} while (($ExitCode -eq 1) -And ($cnt -lt 5))
 #最終的なエンコード回数、終了コード、ファイルサイズ
 Write-Output "エンコード回数:$cnt"
 Write-Output "ExitCode:$ExitCode"
